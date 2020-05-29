@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Store Map with Google</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/c939d0e917.js">
+    </script>
+  </head>
+  <body>
+    <button onclick="go()" class="close"><i class="fas fa-times-circle" style="position: absolute;"></i></button>
+    <div class="search-box">
+    <div class="store">
+      Store Locator<br>
+       <div class="search-con">
+        <div class="search">
+         <input type="text" placeholder="Enter zip code" id="input">
+         <i class="fas fa-search" id="a" style="color:#fff" onclick="searchStores()"></i>
+        </div>
+      </div>
+    </div>
+    <div class="store-list-con">
+      <div class="store-list">
+       <div class="info-background">
+        
+       </div>
+      </div>
+      </div>
+      </div>
+    <div id="map">
+      
+    </div>
+    <script src="store-data.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap" async defer></script>
+    </script>
+  </body>
+</html>
